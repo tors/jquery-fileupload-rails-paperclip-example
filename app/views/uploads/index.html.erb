@@ -22,7 +22,7 @@
           <i class="icon-trash icon-white"></i>
           <span>Delete</span>
         </button>
-        <input type="checkbox" class="toggle">
+        <input type="checkbox" class="toggle"/>
       </div>
       <div class="span5">
         <!-- The global progress bar -->
@@ -33,9 +33,10 @@
     </div>
     <!-- The loading indicator is shown during image processing -->
     <div class="fileupload-loading"></div>
-    <br>
+    <br/>
     <!-- The table listing the files available for upload/download -->
-    <table class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+    <table class="table table-striped">
+      <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
     </table>
   <% end %>
 
@@ -106,7 +107,7 @@
           <i class="icon-trash icon-white"></i>
           <span>{%=locale.fileupload.destroy%}</span>
         </button>
-        <input type="checkbox" name="delete" value="1">
+        <input type="checkbox" name="delete" value="1"/>
       </td>
     </tr>
     {% } %}
