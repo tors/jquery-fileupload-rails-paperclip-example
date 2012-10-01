@@ -11,7 +11,8 @@ This app uses Rails 3.2.8.
 
 ## Running the app
 
-    rake db:setup
+    rake db:create
+    rake db:migrate
     rails server
 
 Open http:://localhost:3000
