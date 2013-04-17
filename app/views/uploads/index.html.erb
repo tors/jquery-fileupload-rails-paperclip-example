@@ -119,7 +119,7 @@
       // 
       // Load existing files:
       $.getJSON($('#fileupload').prop('action'), function (files) {
-        var fu = $('#fileupload').data('fileupload'), 
+        var fu = $('#fileupload').data('blueimpFileupload'), 
           template;
         fu._adjustMaxNumberOfFiles(-files.length);
         console.log(files);
