@@ -45,7 +45,7 @@ class UploadsController < ApplicationController
 	# lets bring this to the front
     upload_data = { "upload" => params[:upload]["upload"][0] }
 
-    @upload = Upload.new(upload)
+    @upload = Upload.new(upload_data)
     respond_to do |format|
       if @upload.save
         format.html {
