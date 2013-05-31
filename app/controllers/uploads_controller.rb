@@ -40,8 +40,12 @@ class UploadsController < ApplicationController
   # POST /uploads
   # POST /uploads.json
   def create
-    @upload = Upload.new(params[:upload])
+	# because of multiple flag set to true,
+	# form post is sending data in slightly nested format
+	# lets bring this to the front
+    upload_data = { "upload" => params[:upload]["upload"][0] }
 
+    @upload = Upload.new(upload)
     respond_to do |format|
       if @upload.save
         format.html {
