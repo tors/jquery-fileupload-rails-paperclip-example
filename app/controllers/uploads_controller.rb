@@ -45,7 +45,7 @@ class UploadsController < ApplicationController
     respond_to do |format|
       if @upload.save
         format.html {
-          render :json => [@upload.to_jq_upload].to_json,
+          render :json => { files: [@upload.to_jq_upload]}.to_json,
           :content_type => 'text/html',
           :layout => false
         }
