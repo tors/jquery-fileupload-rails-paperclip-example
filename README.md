@@ -7,7 +7,7 @@ This is an example app that uses the following gems to upload files for your Rai
 
 This app also uses [twitter-bootstrap-rails](https://github.com/seyhunak/twitter-bootstrap-rails) but is not required.
 
-This app uses Rails 3.2.13.
+This app uses Rails 4.0.0.
 
 ## Running the app
 
