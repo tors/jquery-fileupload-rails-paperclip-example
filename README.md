@@ -11,6 +11,7 @@ This app uses Rails 3.2.13.
 
 ## Running the app
 
+    bundle install
     rake db:create
     rake db:migrate
     rails server
