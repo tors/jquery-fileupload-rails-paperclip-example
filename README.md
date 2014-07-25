@@ -11,7 +11,6 @@ This app uses Rails 4.1.4.
 
 ## Running the app
 
-    rake db:create
     rake db:migrate
     rails server
 
