@@ -1,6 +1,7 @@
 class Upload < ActiveRecord::Base
-  attr_accessible :upload
+
   has_attached_file :upload
+  do_not_validate_attachment_file_type :upload
 
   include Rails.application.routes.url_helpers
 
