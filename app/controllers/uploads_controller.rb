@@ -40,7 +40,7 @@ class UploadsController < ApplicationController
   # POST /uploads
   # POST /uploads.json
   def create
-    @upload = Upload.new(params[:upload])
+    @upload = Upload.new(upload_params)
 
     respond_to do |format|
       if @upload.save
@@ -63,7 +63,7 @@ class UploadsController < ApplicationController
     @upload = Upload.find(params[:id])
 
     respond_to do |format|
-      if @upload.update_attributes(params[:upload])
+      if @upload.update_attributes(upload_params)
         format.html { redirect_to @upload, notice: 'Upload was successfully updated.' }
         format.json { head :no_content }
       else
@@ -83,5 +83,11 @@ class UploadsController < ApplicationController
       format.html { redirect_to uploads_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+
+  def upload_params
+    params.require(:upload).permit(:upload)
   end
 end
