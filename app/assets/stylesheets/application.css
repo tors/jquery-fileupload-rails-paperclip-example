@@ -12,5 +12,6 @@
  *
  *= require_tree .
  *= require jquery.fileupload-ui
+*= require font-awesome
  *= require_self
  */
