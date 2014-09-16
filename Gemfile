@@ -29,7 +29,7 @@ gem 'spring',        group: :development
 
 gem 'jquery-fileupload-rails'
 gem 'paperclip'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '2.2.8'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
