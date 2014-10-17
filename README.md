@@ -10,7 +10,7 @@ This app also uses [twitter-bootstrap-rails](https://github.com/seyhunak/twitter
 This app uses Rails 3.2.13.
 
 ## Running the app
-
+    bundle
     rake db:create
     rake db:migrate
     rails server
